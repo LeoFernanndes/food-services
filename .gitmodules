@@ -1,3 +1,6 @@
 [submodule "food-services-auth-node-backend"]
 	path = food-services-auth-node-backend
 	url = git@github.com:LeoFernanndes/food-services-auth-node-backend.git
+[submodule "food-services-recipes-java-backend"]
+	path = food-services-recipes-java-backend
+	url = git@github.com:LeoFernanndes/food-services-recipes-java-backend.git
