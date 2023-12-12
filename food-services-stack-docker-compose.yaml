@@ -15,7 +15,6 @@ services:
     env_file:
       - .food-services-auth-node-backend.env
 
-
   database-auth:
     image: postgres
     restart: always
@@ -28,6 +27,19 @@ services:
       - '54320:5432'
     volumes:
       - ./database/auth:/var/lib/postgresql/data
+
+  recipes:
+    container_name: "recipes-food-services"
+    build:
+      context: food-services-recipes-java-backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - database-recipes
+      - redis
+      - mongodb
+    env_file:
+      - .food-services-recipes-java-backend.env
 
   database-recipes:
     image: postgres
