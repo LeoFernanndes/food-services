@@ -1,4 +1,5 @@
 .idea
 .env
 database
+.food-services-auth-node-backend.env
 

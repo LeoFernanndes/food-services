@@ -2,6 +2,20 @@ version: '3'
 
 services:
 
+  auth:
+    container_name: "auth-food-services"
+    build:
+      context: food-services-auth-node-backend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - database-auth
+      - redis
+      - mongodb
+    env_file:
+      - .food-services-auth-node-backend.env
+
+
   database-auth:
     image: postgres
     restart: always
