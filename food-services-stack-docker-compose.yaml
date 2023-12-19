@@ -70,3 +70,18 @@ services:
     ports:
       - '27017:27017'
     restart: always
+
+  rabbitmq:
+    image: rabbitmq:3.12
+    container_name: "rabbitmq-food-services"
+    ports:
+      - "5672:5672"
+
+  rabbitmq-admin:
+    image: rabbitmq:3.12-management
+    container_name: "rabbitmq-admin-food-services"
+    ports:
+      - "15672:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
