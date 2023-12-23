@@ -4,6 +4,7 @@ services:
 
   auth:
     container_name: "auth-food-services"
+    restart: unless-stopped
     build:
       context: food-services-auth-node-backend
     ports:
@@ -12,6 +13,7 @@ services:
       - database-auth
       - redis
       - mongodb
+      - rabbitmq-admin
     env_file:
       - .food-services-auth-node-backend.env
 
@@ -30,6 +32,7 @@ services:
 
   recipes:
     container_name: "recipes-food-services"
+    restart: unless-stopped
     build:
       context: food-services-recipes-java-backend
     ports:
@@ -38,6 +41,7 @@ services:
       - database-recipes
       - redis
       - mongodb
+      - rabbitmq-admin
     env_file:
       - .food-services-recipes-java-backend.env
 
@@ -71,17 +75,13 @@ services:
       - '27017:27017'
     restart: always
 
-  rabbitmq:
-    image: rabbitmq:3.12
-    container_name: "rabbitmq-food-services"
-    ports:
-      - "5672:5672"
-
   rabbitmq-admin:
     image: rabbitmq:3.12-management
     container_name: "rabbitmq-admin-food-services"
+    restart: always
     ports:
       - "15672:15672"
+      - "5672:5672"
     environment:
       - RABBITMQ_DEFAULT_USER=guest
       - RABBITMQ_DEFAULT_PASS=guest

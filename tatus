@@ -1,0 +1,86 @@
+[33mcommit b9df1d29e35812afeab6f6b2659ef118d6b5da91[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: LeoFernanndes <balbino.leonel@gmail.com>
+Date:   Tue Dec 19 04:30:02 2023 -0300
+
+    updates recipes service with first implementation of message queue
+
+[33mcommit 2706bd19cec095ca80edd383a826c783f43d1542[m
+Author: LeoFernanndes <balbino.leonel@gmail.com>
+Date:   Fri Dec 15 20:01:11 2023 -0300
+
+    updates recipes to logging implementation
+
+[33mcommit c41aa764ab51a7edda582c0ba38acecdae9c9f09[m
+Author: LeoFernanndes <balbino.leonel@gmail.com>
+Date:   Wed Dec 13 03:10:56 2023 -0300
+
+    adds github actions build ci to recipes service
+
+[33mcommit 5fe8bdfd577ddaf8ae785c9c809e4fd53e7c160c[m
+Author: LeoFernanndes <balbino.leonel@gmail.com>
+Date:   Wed Dec 13 01:23:37 2023 -0300
+
+    updates auth service with github actions and token decoding
+
+[33mcommit 8741f67c24e11305d1d501b3a1618c8529ddb4b6[m
+Merge: 03cb98a f0b8899
+Author: Leonel Fernandes <58197167+LeoFernanndes@users.noreply.github.com>
+Date:   Tue Dec 12 02:13:00 2023 -0300
+
+    Merge pull request #3 from LeoFernanndes/feat/compose-stack
+    
+    Feat/compose stack
+
+[33mcommit f0b889942a44a0dbf6df76e4686908166588519a[m[33m ([m[1;31morigin/feat/compose-stack[m[33m, [m[1;32mfeat/compose-stack[m[33m)[m
+Author: LeoFernanndes <balbino.leonel@gmail.com>
+Date:   Tue Dec 12 02:11:57 2023 -0300
+
+    adds recipes as a service
+
+[33mcommit 90cc21d767b3552c1422842574d79bd573f2858c[m
+Author: LeoFernanndes <balbino.leonel@gmail.com>
+Date:   Mon Dec 11 21:31:16 2023 -0300
+
+    updates auth service
+
+[33mcommit e6eab0cf97d8b2cdd9d3cff231aec69798e3cbb6[m
+Author: LeoFernanndes <balbino.leonel@gmail.com>
+Date:   Mon Dec 11 21:28:35 2023 -0300
+
+    adds configuration for deployng auth as part of the stack
+
+[33mcommit 03cb98a707e8cd3de9f92a06699e14a5a0e58a7d[m
+Merge: 26c42c0 c8e2e98
+Author: Leonel Fernandes <58197167+LeoFernanndes@users.noreply.github.com>
+Date:   Mon Dec 11 04:55:14 2023 -0300
+
+    Merge pull request #2 from LeoFernanndes/feat/first-implementation-of-recipe-service
+    
+    first implementation of recipes service
+
+[33mcommit c8e2e989f91d736f00b647976ba58e68ef8c7218[m[33m ([m[1;31morigin/feat/first-implementation-of-recipe-service[m[33m, [m[1;32mfeat/first-implementation-of-recipe-service[m[33m)[m
+Author: LeoFernanndes <balbino.leonel@gmail.com>
+Date:   Mon Dec 11 04:49:11 2023 -0300
+
+    first implementation of recipes service
+
+[33mcommit 26c42c09a98f483d7aefd946223c312915d36476[m
+Merge: 3236d84 35bf8d4
+Author: Leonel Fernandes <58197167+LeoFernanndes@users.noreply.github.com>
+Date:   Thu Dec 7 17:13:24 2023 -0300
+
+    Merge pull request #1 from LeoFernanndes/feat/first-functional-crud
+    
+    updated fisrt crud version
+
+[33mcommit 35bf8d449f3d1e429af23a9959cff6477eb39c30[m[33m ([m[1;31morigin/feat/first-functional-crud[m[33m, [m[1;32mfeat/first-functional-crud[m[33m)[m
+Author: LeoFernanndes <balbino.leonel@gmail.com>
+Date:   Thu Dec 7 17:10:08 2023 -0300
+
+    updated fisrt crud version
+
+[33mcommit 3236d84c70087c61ac28fbf6aac8ea19b5f07f7c[m
+Author: LeoFernanndes <balbino.leonel@gmail.com>
+Date:   Sat Dec 2 00:53:20 2023 -0300
+
+    adds food-service-auth-node-backend as a submodule
